@@ -9,7 +9,7 @@
 <link rel="manifest" href="./manifest.json">
 <link rel="icon" href="./icon.svg" type="image/svg+xml">
 <style>
-:root{--bg:#f6f7f9;--card:#fff;--text:#111827;--muted:#6b7280;--border:#e5e7eb;--yes:#15803d;--no:#b91c1c;--pending:#a16207;--accent:#2563eb}*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}main{max-width:760px;margin:auto;padding:16px 14px 40px}.header{display:grid;grid-template-columns:52px 1fr 52px;align-items:center;gap:8px}.nav{height:46px;border:1px solid var(--border);background:#fff;border-radius:12px;font-size:22px;font-weight:700}.month{text-align:center}.month h1{margin:2px 0;font-size:22px;text-transform:capitalize}.muted{font-size:13px;color:var(--muted)}.prices{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}.box,.summary,.session{background:#fff;border:1px solid var(--border);border-radius:15px;padding:13px}.box label{font-size:12px;color:var(--muted);font-weight:700}.box input{width:100%;margin-top:7px;border:1px solid var(--border);border-radius:10px;padding:10px;font-size:17px}.totalBox{background:#111827;color:white;border-radius:16px;padding:16px;margin-bottom:15px}.totalBox small{color:#cbd5e1}.totalValue{font-size:30px;font-weight:800;margin-top:4px}.summary{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px}.stat{min-width:0}.stat .name{font-weight:800}.stat .line{font-size:13px;color:var(--muted);margin-top:6px}.stat .value{font-size:20px;font-weight:800;margin-top:7px}.titleRow{display:flex;align-items:end;justify-content:space-between;gap:10px;margin:18px 0 8px}.titleRow h2{font-size:18px;margin:0}.session{margin-bottom:9px}.sessionTop{display:flex;align-items:center;justify-content:space-between;gap:10px}.date{font-weight:800}.activity{font-size:13px;color:var(--muted);margin-top:3px}.buttons{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:11px}.choice{min-height:44px;border:1px solid var(--border);border-radius:10px;background:#fff;font-weight:800;font-size:13px}.choice.active.yes{background:#dcfce7;border-color:#86efac;color:#166534}.choice.active.no{background:#fee2e2;border-color:#fca5a5;color:#991b1b}.choice.active.pending{background:#fef3c7;border-color:#fcd34d;color:#92400e}.saved{font-size:12px;color:#15803d;font-weight:700}.footerBtns{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.footerBtns button{flex:1;min-width:150px;min-height:44px;border:1px solid var(--border);background:#fff;border-radius:11px;font-weight:700}@media(max-width:520px){.prices,.summary{grid-template-columns:1fr 1fr}.buttons{grid-template-columns:repeat(3,1fr)}.choice{font-size:12px;padding:8px 4px}}
+:root{--bg:#f6f7f9;--card:#fff;--text:#111827;--muted:#6b7280;--border:#e5e7eb;--yes:#15803d;--no:#b91c1c;--pending:#a16207;--accent:#2563eb}*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}main{max-width:760px;margin:auto;padding:16px 14px 40px}.header{display:grid;grid-template-columns:52px 1fr 52px;align-items:center;gap:8px}.nav{height:46px;border:1px solid var(--border);background:#fff;border-radius:12px;font-size:22px;font-weight:700}.month{text-align:center}.month h1{margin:2px 0;font-size:22px;text-transform:capitalize}.muted{font-size:13px;color:var(--muted)}.tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0}.tab{min-height:44px;border:1px solid var(--border);border-radius:11px;background:#fff;font-weight:800}.tab.active{background:#111827;color:#fff;border-color:#111827}.prices{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}.box,.summary,.session,.reportCard{background:#fff;border:1px solid var(--border);border-radius:15px;padding:13px}.box label{font-size:12px;color:var(--muted);font-weight:700}.box input{width:100%;margin-top:7px;border:1px solid var(--border);border-radius:10px;padding:10px;font-size:17px}.totalBox{background:#111827;color:white;border-radius:16px;padding:16px;margin-bottom:15px}.totalBox small{color:#cbd5e1}.totalValue{font-size:30px;font-weight:800;margin-top:4px}.summary{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px}.stat{min-width:0}.stat .name{font-weight:800}.stat .line{font-size:13px;color:var(--muted);margin-top:6px}.stat .value{font-size:20px;font-weight:800;margin-top:7px}.titleRow{display:flex;align-items:end;justify-content:space-between;gap:10px;margin:18px 0 8px}.titleRow h2{font-size:18px;margin:0}.session{margin-bottom:9px}.sessionTop{display:flex;align-items:center;justify-content:space-between;gap:10px}.date{font-weight:800}.activity{font-size:13px;color:var(--muted);margin-top:3px}.buttons{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:11px}.choice{min-height:44px;border:1px solid var(--border);border-radius:10px;background:#fff;font-weight:800;font-size:13px}.choice.active.yes{background:#dcfce7;border-color:#86efac;color:#166534}.choice.active.no{background:#fee2e2;border-color:#fca5a5;color:#991b1b}.choice.active.pending{background:#fef3c7;border-color:#fcd34d;color:#92400e}.saved{font-size:12px;color:#15803d;font-weight:700}.footerBtns,.shareBtns{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.footerBtns button,.shareBtns button{flex:1;min-width:140px;min-height:44px;border:1px solid var(--border);background:#fff;border-radius:11px;font-weight:700}.reportGrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}.reportCard h3{margin:0 0 8px;font-size:17px}.reportBig{font-size:26px;font-weight:800}.reportLine{font-size:13px;color:var(--muted);margin-top:6px}.daysList{margin-top:10px;padding-top:10px;border-top:1px solid var(--border);font-size:14px;line-height:1.6}.daysList strong{display:block;margin-bottom:4px}.hidden{display:none!important}@media(max-width:520px){.prices,.summary,.reportGrid{grid-template-columns:1fr}.buttons{grid-template-columns:repeat(3,1fr)}.choice{font-size:12px;padding:8px 4px}}
 </style>
 </head>
 <body>
@@ -20,24 +20,53 @@
     <button class="nav" id="nextMonth" aria-label="Próximo mês">›</button>
   </div>
 
-  <div class="prices">
-    <div class="box"><label>Valor por aula de Tênis</label><input id="tennisPrice" inputmode="decimal" placeholder="R$ 0,00"></div>
-    <div class="box"><label>Valor por aula de Academia</label><input id="gymPrice" inputmode="decimal" placeholder="R$ 0,00"></div>
+  <div class="tabs">
+    <button class="tab active" id="tabRegister">Lançamentos</button>
+    <button class="tab" id="tabSummary">Resumo mensal</button>
   </div>
 
-  <div class="totalBox"><small>TOTAL DO MÊS</small><div class="totalValue" id="monthTotal">R$ 0,00</div></div>
+  <section id="registerView">
+    <div class="prices">
+      <div class="box"><label>Valor por aula de Tênis</label><input id="tennisPrice" inputmode="decimal" placeholder="R$ 0,00"></div>
+      <div class="box"><label>Valor por aula de Academia</label><input id="gymPrice" inputmode="decimal" placeholder="R$ 0,00"></div>
+    </div>
 
-  <div class="summary">
-    <div class="stat"><div class="name">🎾 Tênis</div><div class="line" id="tennisSummary"></div><div class="value" id="tennisTotal"></div></div>
-    <div class="stat"><div class="name">🏋️ Academia</div><div class="line" id="gymSummary"></div><div class="value" id="gymTotal"></div></div>
-  </div>
+    <div class="totalBox"><small>TOTAL DO MÊS</small><div class="totalValue" id="monthTotal">R$ 0,00</div></div>
 
-  <div class="titleRow"><h2>Aulas previstas</h2><span class="saved" id="savedMsg">Salvo no aparelho</span></div>
-  <div id="sessions"></div>
+    <div class="summary">
+      <div class="stat"><div class="name">🎾 Tênis</div><div class="line" id="tennisSummary"></div><div class="value" id="tennisTotal"></div></div>
+      <div class="stat"><div class="name">🏋️ Academia</div><div class="line" id="gymSummary"></div><div class="value" id="gymTotal"></div></div>
+    </div>
+
+    <div class="titleRow"><h2>Aulas previstas</h2><span class="saved" id="savedMsg">Salvo no aparelho</span></div>
+    <div id="sessions"></div>
+  </section>
+
+  <section id="summaryView" class="hidden">
+    <div class="totalBox"><small>FECHAMENTO DO MÊS</small><div class="totalValue" id="reportGrandTotal">R$ 0,00</div></div>
+    <div class="reportGrid">
+      <div class="reportCard">
+        <h3>🎾 Tênis</h3>
+        <div class="reportBig" id="reportTennisValue"></div>
+        <div class="reportLine" id="reportTennisCounts"></div>
+        <div class="daysList"><strong>Dias em que houve treino</strong><span id="reportTennisDays"></span></div>
+      </div>
+      <div class="reportCard">
+        <h3>🏋️ Academia</h3>
+        <div class="reportBig" id="reportGymValue"></div>
+        <div class="reportLine" id="reportGymCounts"></div>
+        <div class="daysList"><strong>Dias em que houve treino</strong><span id="reportGymDays"></span></div>
+      </div>
+    </div>
+    <div class="shareBtns">
+      <button id="shareTennis">Compartilhar Tênis</button>
+      <button id="shareGym">Compartilhar Academia</button>
+      <button id="shareAll">Compartilhar Tudo</button>
+    </div>
+  </section>
 
   <div class="footerBtns">
     <button id="currentMonth">Ir para mês atual</button>
-    <button id="shareSummary">Compartilhar resumo</button>
     <button id="exportData">Backup</button>
   </div>
 </main>
@@ -52,6 +81,7 @@ const $=id=>document.getElementById(id);
 const now=new Date();
 let year=now.getFullYear(), month=now.getMonth();
 let data=load();
+let activeView='register';
 
 function defaults(){return {prices:{tennis:0,gym:0},records:{}}}
 function load(){try{const x=JSON.parse(localStorage.getItem(STORAGE)||'null');return x&&x.prices&&x.records?x:defaults()}catch(e){return defaults()}}
@@ -62,10 +92,12 @@ function money(v){return new Intl.NumberFormat('pt-BR',{style:'currency',currenc
 function parsePrice(v){let s=String(v||'').trim().replace(/R\$/gi,'').replace(/\s/g,'');if(s.includes(',')&&s.includes('.'))s=s.replace(/\./g,'').replace(',','.');else if(s.includes(','))s=s.replace(',','.');const n=Number(s);return Number.isFinite(n)&&n>=0?n:0}
 function monthLabel(){return new Intl.DateTimeFormat('pt-BR',{month:'long',year:'numeric'}).format(new Date(year,month,1))}
 function dayLabel(d){const wd=new Intl.DateTimeFormat('pt-BR',{weekday:'short'}).format(d).replace('.','');return String(d.getDate()).padStart(2,'0')+'/'+String(d.getMonth()+1).padStart(2,'0')+' · '+wd}
+function shortDate(d){return String(d.getDate()).padStart(2,'0')+'/'+String(d.getMonth()+1).padStart(2,'0')}
 function sessions(){const out=[];const last=new Date(year,month+1,0).getDate();for(let day=1;day<=last;day++){const d=new Date(year,month,day);if(SCHEDULE.tennis.includes(d.getDay()))out.push({date:d,type:'tennis'});if(SCHEDULE.gym.includes(d.getDay()))out.push({date:d,type:'gym'})}return out.sort((a,b)=>a.date-b.date)}
 function getRecord(item){const m=ym();data.records[m]=data.records[m]||{};const k=key(item.date);data.records[m][k]=data.records[m][k]||{type:item.type,status:'pending'};return data.records[m][k]}
-function setStatus(item,status){const r=getRecord(item);r.status=status;save();render()}
-function counts(){const s={tennis:{planned:0,yes:0,no:0,pending:0,total:0},gym:{planned:0,yes:0,no:0,pending:0,total:0}};sessions().forEach(item=>{const r=getRecord(item),g=s[item.type];g.planned++;if(r.status==='yes')g.yes++;else if(r.status==='no')g.no++;else g.pending++});s.tennis.total=s.tennis.yes*data.prices.tennis;s.gym.total=s.gym.yes*data.prices.gym;s.total=s.tennis.total+s.gym.total;return s}
+function setStatus(item,status){getRecord(item).status=status;save();render()}
+function counts(){const s={tennis:{planned:0,yes:0,no:0,pending:0,total:0,days:[]},gym:{planned:0,yes:0,no:0,pending:0,total:0,days:[]}};sessions().forEach(item=>{const r=getRecord(item),g=s[item.type];g.planned++;if(r.status==='yes'){g.yes++;g.days.push(item.date)}else if(r.status==='no')g.no++;else g.pending++});s.tennis.total=s.tennis.yes*data.prices.tennis;s.gym.total=s.gym.yes*data.prices.gym;s.total=s.tennis.total+s.gym.total;return s}
+function daysText(days){return days.length?days.map(shortDate).join(', '):'Nenhum treino realizado'}
 function render(){
   $('monthTitle').textContent=monthLabel();
   $('tennisPrice').value=data.prices.tennis?String(data.prices.tennis).replace('.',','):'';
@@ -79,15 +111,30 @@ function render(){
   const s=counts();
   $('tennisSummary').textContent=s.tennis.yes+' fui · '+s.tennis.no+' não fui · '+s.tennis.pending+' pendentes';
   $('gymSummary').textContent=s.gym.yes+' fui · '+s.gym.no+' não fui · '+s.gym.pending+' pendentes';
-  $('tennisTotal').textContent=money(s.tennis.total);$('gymTotal').textContent=money(s.gym.total);$('monthTotal').textContent=money(s.total);save();
+  $('tennisTotal').textContent=money(s.tennis.total);$('gymTotal').textContent=money(s.gym.total);$('monthTotal').textContent=money(s.total);
+  $('reportGrandTotal').textContent=money(s.total);
+  $('reportTennisValue').textContent=money(s.tennis.total);
+  $('reportGymValue').textContent=money(s.gym.total);
+  $('reportTennisCounts').textContent=s.tennis.yes+' realizados · '+s.tennis.no+' não realizados · '+s.tennis.pending+' pendentes';
+  $('reportGymCounts').textContent=s.gym.yes+' realizados · '+s.gym.no+' não realizados · '+s.gym.pending+' pendentes';
+  $('reportTennisDays').textContent=daysText(s.tennis.days);
+  $('reportGymDays').textContent=daysText(s.gym.days);
+  save();
 }
+function setView(view){activeView=view;$('registerView').classList.toggle('hidden',view!=='register');$('summaryView').classList.toggle('hidden',view!=='summary');$('tabRegister').classList.toggle('active',view==='register');$('tabSummary').classList.toggle('active',view==='summary');if(view==='summary')render()}
 function changeMonth(delta){month+=delta;if(month<0){month=11;year--}if(month>11){month=0;year++}render();window.scrollTo({top:0,behavior:'smooth'})}
+function shareText(type){const s=counts();if(type==='tennis')return 'Fechamento Tênis - '+monthLabel()+'\nAulas realizadas: '+s.tennis.yes+'\nDias: '+daysText(s.tennis.days)+'\nValor por aula: '+money(data.prices.tennis)+'\nTOTAL TÊNIS: '+money(s.tennis.total);if(type==='gym')return 'Fechamento Academia - '+monthLabel()+'\nTreinos realizados: '+s.gym.yes+'\nDias: '+daysText(s.gym.days)+'\nValor por aula: '+money(data.prices.gym)+'\nTOTAL ACADEMIA: '+money(s.gym.total);return 'Fechamento - '+monthLabel()+'\n\n🎾 TÊNIS\nRealizados: '+s.tennis.yes+'\nDias: '+daysText(s.tennis.days)+'\nValor: '+money(s.tennis.total)+'\n\n🏋️ ACADEMIA\nRealizados: '+s.gym.yes+'\nDias: '+daysText(s.gym.days)+'\nValor: '+money(s.gym.total)+'\n\nTOTAL GERAL: '+money(s.total)}
+async function doShare(type){const text=shareText(type);if(navigator.share){try{await navigator.share({title:'Fechamento de treinos',text:text})}catch(e){}}else{alert(text)}}
 $('prevMonth').addEventListener('click',()=>changeMonth(-1));
 $('nextMonth').addEventListener('click',()=>changeMonth(1));
+$('tabRegister').addEventListener('click',()=>setView('register'));
+$('tabSummary').addEventListener('click',()=>setView('summary'));
 $('currentMonth').addEventListener('click',()=>{const d=new Date();year=d.getFullYear();month=d.getMonth();render();window.scrollTo({top:0,behavior:'smooth'})});
 $('tennisPrice').addEventListener('change',e=>{data.prices.tennis=parsePrice(e.target.value);save();render()});
 $('gymPrice').addEventListener('change',e=>{data.prices.gym=parsePrice(e.target.value);save();render()});
-$('shareSummary').addEventListener('click',async()=>{const s=counts();const text='Resumo - '+monthLabel()+'\n🎾 Tênis: '+s.tennis.yes+' fui, '+s.tennis.no+' não fui, '+s.tennis.pending+' pendentes — '+money(s.tennis.total)+'\n🏋️ Academia: '+s.gym.yes+' fui, '+s.gym.no+' não fui, '+s.gym.pending+' pendentes — '+money(s.gym.total)+'\nTOTAL: '+money(s.total);if(navigator.share){try{await navigator.share({title:'Resumo de treinos',text:text})}catch(e){}}else{alert(text)}});
+$('shareTennis').addEventListener('click',()=>doShare('tennis'));
+$('shareGym').addEventListener('click',()=>doShare('gym'));
+$('shareAll').addEventListener('click',()=>doShare('all'));
 $('exportData').addEventListener('click',()=>{const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='backup-treinos.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)});
 if('serviceWorker'in navigator){navigator.serviceWorker.register('./service-worker.js').then(reg=>reg.update()).catch(()=>{})}
 render();
