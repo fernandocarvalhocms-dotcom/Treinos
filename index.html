@@ -74,7 +74,9 @@
 (function(){
 'use strict';
 const STORAGE='treinos_app_v2';
-const SCHEDULE={tennis:[2,4],gym:[3,5]};
+const SCHEDULE_OLD={tennis:[2,4],gym:[3,5]};
+const SCHEDULE_NEW={tennis:[2,5],gym:[1,3]};
+const SCHEDULE_CHANGE=new Date(2026,8,21);
 const names={tennis:'Tênis',gym:'Academia'};
 const icons={tennis:'🎾',gym:'🏋️'};
 const $=id=>document.getElementById(id);
@@ -93,7 +95,7 @@ function parsePrice(v){let s=String(v||'').trim().replace(/R\$/gi,'').replace(/\
 function monthLabel(){return new Intl.DateTimeFormat('pt-BR',{month:'long',year:'numeric'}).format(new Date(year,month,1))}
 function dayLabel(d){const wd=new Intl.DateTimeFormat('pt-BR',{weekday:'short'}).format(d).replace('.','');return String(d.getDate()).padStart(2,'0')+'/'+String(d.getMonth()+1).padStart(2,'0')+' · '+wd}
 function shortDate(d){return String(d.getDate()).padStart(2,'0')+'/'+String(d.getMonth()+1).padStart(2,'0')}
-function sessions(){const out=[];const last=new Date(year,month+1,0).getDate();for(let day=1;day<=last;day++){const d=new Date(year,month,day);if(SCHEDULE.tennis.includes(d.getDay()))out.push({date:d,type:'tennis'});if(SCHEDULE.gym.includes(d.getDay()))out.push({date:d,type:'gym'})}return out.sort((a,b)=>a.date-b.date)}
+function sessions(){const out=[];const last=new Date(year,month+1,0).getDate();for(let day=1;day<=last;day++){const d=new Date(year,month,day);const schedule=d>=SCHEDULE_CHANGE?SCHEDULE_NEW:SCHEDULE_OLD;if(schedule.tennis.includes(d.getDay()))out.push({date:d,type:'tennis'});if(schedule.gym.includes(d.getDay()))out.push({date:d,type:'gym'})}return out.sort((a,b)=>a.date-b.date)}
 function getRecord(item){const m=ym();data.records[m]=data.records[m]||{};const k=key(item.date);data.records[m][k]=data.records[m][k]||{type:item.type,status:'pending'};return data.records[m][k]}
 function setStatus(item,status){getRecord(item).status=status;save();render()}
 function counts(){const s={tennis:{planned:0,yes:0,no:0,pending:0,total:0,days:[]},gym:{planned:0,yes:0,no:0,pending:0,total:0,days:[]}};sessions().forEach(item=>{const r=getRecord(item),g=s[item.type];g.planned++;if(r.status==='yes'){g.yes++;g.days.push(item.date)}else if(r.status==='no')g.no++;else g.pending++});s.tennis.total=s.tennis.yes*data.prices.tennis;s.gym.total=s.gym.yes*data.prices.gym;s.total=s.tennis.total+s.gym.total;return s}
